@@ -26,7 +26,7 @@ var fight = function (enemy) {
     if (promptFight === "" || promptFight === null) {
       window.alert("You need to provide a valid answer! Please try again.");
       // use return to call it again and stop the rest of this function from running
-      return fightOrSkip();
+      return fight(enemy);
     }
 
     // if player picks "skip" confirm and then stop the loop
