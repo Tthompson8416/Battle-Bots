@@ -20,16 +20,16 @@ var playerInfo = {
   name: getPlayerName(),
   health: 100,
   attack: 10,
-  money: 10,
+  money: 20,
 
   reset: function () {
     this.health = 100;
-    this.money = 10;
+    this.money = 20;
     this.attack = 10;
   },
 
   refillHealth: function () {
-    if (this.money >= 7) {
+    if (playerInfo.money >= 7) {
       window.alert("Refilling player's health by 20 for 7 dollars.");
       this.health += 20;
       this.money -= 7;
